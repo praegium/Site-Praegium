@@ -1,0 +1,148 @@
+
+body {
+    font-family: 'Hero Archer', sans-serif;
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.header-container {
+    background: linear-gradient(to bottom, rgba(139, 0, 0, 0.8), rgba(178, 34, 34, 0.8)), url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+
+nav {
+    background-color: #111;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #b22222;
+}
+
+
+section {
+    padding: 50px 10%;
+    border-bottom: 1px solid #333;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'The Blowar', sans-serif;
+    color: #b22222;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery-container img {
+    width: 45%;
+    margin: 10px;
+    border: 3px solid #b22222;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(255, 0, 0, 0.5);
+}
+
+
+.botao {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background: linear-gradient(to right, #b22222, #8b0000);
+    color: white;
+    text-transform: uppercase;
+    font-family: 'The Blowar', sans-serif;
+    font-size: 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.5);
+}
+
+.botao:hover {
+    background: linear-gradient(to right, #8b0000, #b22222);
+    transform: scale(1.05);
+}
+
+
+.faq-container {
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+.faq-container p {
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-left: 5px solid #b22222;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+
+footer {
+    background: #111;
+    padding: 30px;
+    font-size: 18px;
+    border-top: 4px solid #b22222;
+}
+
+footer a {
+    color: #b22222;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
