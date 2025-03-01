@@ -7,14 +7,19 @@ body {
     text-align: center;
 }
 
-
 .header-container {
-    background: linear-gradient(to bottom, rgba(139, 0, 0, 0.8), rgba(178, 34, 34, 0.8)), url('banner.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    max-height: 400px; 
+    position: relative;
 }
 
+.header-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    display: block;
+}
 
 nav {
     background-color: #111;
@@ -31,7 +36,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -49,7 +54,6 @@ nav ul li a {
 nav ul li a:hover {
     color: #b22222;
 }
-
 
 section {
     padding: 50px 10%;
@@ -72,7 +76,6 @@ p {
     line-height: 1.8;
 }
 
-
 .gallery-container {
     display: flex;
     justify-content: center;
@@ -92,7 +95,6 @@ p {
     transform: scale(1.05);
     box-shadow: 0px 4px 15px rgba(255, 0, 0, 0.5);
 }
-
 
 .botao {
     display: inline-block;
@@ -114,7 +116,6 @@ p {
     transform: scale(1.05);
 }
 
-
 .faq-container {
     text-align: left;
     max-width: 800px;
@@ -129,7 +130,6 @@ p {
     border-radius: 5px;
 }
 
-/* RodapÃ© */
 footer {
     background: #111;
     padding: 30px;
@@ -147,10 +147,15 @@ footer a:hover {
     text-decoration: underline;
 }
 
-
 @media (max-width: 768px) {
     .header-container {
-        height: 250px;
+        max-height: 250px; 
+    }
+
+    .header-container img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
     nav ul {
@@ -189,10 +194,9 @@ footer a:hover {
     }
 }
 
-
 @media (max-width: 480px) {
     .header-container {
-        height: 200px;
+        max-height: 200px; 
     }
 
     nav ul {
@@ -229,29 +233,20 @@ footer a:hover {
     footer {
         font-size: 12px;
     }
-    .header-container {
-    width: 100%;
-    overflow: hidden;
-    max-height: 400px; 
-    position: relative;
 }
 
-.header-container img {
+.book-cover {
     width: 100%;
     height: auto;
-    object-fit: cover; 
-    display: block;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 8px;
 }
 
-
 @media (max-width: 768px) {
-    .header-container {
-        max-height: 250px; 
-    }
-
-    .header-container img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+    .book-cover {
+        width: 90%;
+        max-height: 300px;
+        object-fit: contain;
     }
 }
